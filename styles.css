@@ -5,8 +5,12 @@
     padding: 0;
 }
 
+text-center {
+    text-align: center;
+}
+
 .color-blue {
-    color: rgb(116, 81, 235)
+    color: rgb(3, 52, 108);
 }
 
 .color-white {
@@ -18,7 +22,15 @@
 }
 
 .bg-light-blue {
-    color: rgb(2, 119, 189);
+    background-color: rgb(2, 119, 189);
+}
+
+.bg-blue {
+    background-color: rgb(3, 52, 108);
+}
+
+.bg-violet {
+    background-color: rgb(116, 81, 235)
 }
 
 body {
@@ -26,44 +38,47 @@ body {
 }
 
 /* ------------- HEADER ------------- */
+
 header {
-    background-color: rgb(116, 81, 235);
-    display:          flex;
-    flex-direction:   row;
-    width:            100vw;
+    display:         flex;
+    justify-content: space-around;
+    max-width:       100vw;
 }
 
-header > * {
-    height:       50vh;
-    margin-left:  auto;
-    margin-right: auto;
+.presentation {
+    display:        flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 2rem;
 }
 
 header > div {
-    width: 50vw;
+    display:         flex;
+    justify-content: center;
+    width:           50vw;
 }
 
-/*header > div > * {*/
-/*    margin: auto;*/
-/*}*/
-
-header > img {
-    display: block;
-    height:  40vh;
-    width:   40vw;
+header > div > div {
+    display:         flex;
+    justify-content: center;
+    width:           30vw;
 }
 
 /* ------------- MAIN ------------- */
-
 main {
-    height: 30vh;
+
+}
+
+.big-font {
+    font-size: 10em;
 }
 
 /* ------------- FOOTER ------------- */
 
 footer {
-    background-color: rgb(0, 54, 104);
-    height:           50vh;
+
 }
 
 /* ------------- CSS SNIPPET ------------- */
