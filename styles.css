@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    font-family: Arial, cursive;
+}
+
 text-center {
     text-align: center;
 }
@@ -33,21 +37,12 @@ text-center {
     background-color: rgb(116, 81, 235)
 }
 
-body {
-    font-family: Arial;
-}
-
 /* ------------- HEADER ------------- */
 
 header {
     display:         flex;
     justify-content: space-around;
     max-width:       100vw;
-}
-
-.presentation {
-    display:        flex;
-    flex-direction: column;
 }
 
 h2 {
@@ -66,9 +61,23 @@ header > div > div {
     width:           30vw;
 }
 
+.presentation {
+    display:        flex;
+    flex-direction: column;
+}
+
 /* ------------- MAIN ------------- */
 main {
+    display:         flex;
+    flex-direction:  row;
+    justify-content: space-around;
 
+}
+
+main > div {
+    height: 50vh;
+    margin: auto;
+    width:  50vw;
 }
 
 .big-font {
@@ -78,7 +87,7 @@ main {
 /* ------------- FOOTER ------------- */
 
 footer {
-
+    height: 30vh;
 }
 
 /* ------------- CSS SNIPPET ------------- */
