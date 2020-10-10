@@ -64,61 +64,23 @@ header > div > div {
 
 /* ------------- MAIN ------------- */
 main {
-    display:         flex;
-    flex-direction:  row;
-    justify-content: space-around;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
 
-main > div {
-    height: 50vh;
-    margin: auto;
-    width:  50vw;
+main > div p {
+    width: 40vw;
 }
 
 .big-font {
-    font-size: 10em;
+    font-size: 15em;
 }
 
 /* ------------- FOOTER ------------- */
 
 footer {
     height: 30vh;
-}
-
-/* ------------- CSS SNIPPET ------------- */
-/* {
-    background-color: rgba(255, 0, 0, .2);
-}
-
-* * {
-    background-color: rgba(0, 255, 0, .2);
-}
-
-* * * {
-    background-color: rgba(0, 0, 255, .2);
-}
-
-* * * * {
-    background-color: rgba(255, 0, 255, .2);
-}
-
-* * * * * {
-    background-color: rgba(0, 255, 255, .2);
-}
-
-* * * * * * {
-    background-color: rgba(255, 255, 0, .2);
-}
-
-* * * * * * * {
-    background-color: rgba(255, 0, 0, .2);
-}
-
-* * * * * * * * {
-    background-color: rgba(0, 255, 0, .2);
-}
-
-* * * * * * * * * {
-    background-color: rgba(0, 0, 255, .2);
 }
