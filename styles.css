@@ -9,6 +9,10 @@ body {
     font-family: Arial, cursive;
 }
 
+a:visited {
+    color: white;
+}
+
 .color-blue {
     color: rgb(3, 52, 108);
 }
@@ -58,11 +62,11 @@ header > div {
 header > div > div {
     display: flex;
     justify-content: center;
-    width: 35vw;
+    width: 40vw;
 }
 
 header > div > div > p {
-    font-size: 1.7rem;
+    font-size: 1.1rem;
 }
 
 .presentation {
@@ -80,25 +84,47 @@ main {
 
 }
 
-main > div p {
-    width: 40vw;
+main > h2 {
+    margin-bottom: -2em;
 }
 
+main > div > p {
+    width: 40vw;
+    margin-bottom: 1em;
+}
 
 ul {
     padding-left: 4vw;
+    margin-bottom: 1em;
 }
 
 .big-font {
-    font-size: 15em;
+    font-size: 12em;
 }
 
 /* ------------- FOOTER ------------- */
 footer {
-    height: 30vh;
+    padding-top: 5vh;
+}
+
+footer p {
+    padding-left: 10vw;
+    margin-bottom: 4vh;
+    font-size: 1.6em;
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 2.5em;
     padding-left: 10vw;
+}
+
+.social {
+    padding-left: 10vw;
+}
+
+ion-icon {
+    font-size: 4em;
+    margin-right: 1.5vw;
+    margin-bottom: 5vh;
+    padding: 0.2em 0.2em 0.2em 0.2em;
 }
