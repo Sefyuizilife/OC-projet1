@@ -62,7 +62,7 @@ header > div {
 header > div > div {
     display: flex;
     justify-content: center;
-    width: 40vw;
+    width: 30vw;
 }
 
 header > div > div > p {
@@ -80,7 +80,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 5em 0 5em 0;
+    margin: 7.5em 0 7.5em 0;
 
 }
 
@@ -89,8 +89,7 @@ main > h2 {
 }
 
 main > div > p {
-    width: 40vw;
-    margin-bottom: 1em;
+    width: 30vw;
 }
 
 ul {
@@ -99,7 +98,11 @@ ul {
 }
 
 .big-font {
-    font-size: 12em;
+    font-size: 15em;
+}
+
+.mySkills p {
+    margin-bottom: 2vh;
 }
 
 /* ------------- FOOTER ------------- */
