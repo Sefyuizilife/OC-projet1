@@ -7,6 +7,7 @@
 
 body {
     font-family: Arial, cursive;
+    font-size: 15px;
 }
 
 a:visited {
@@ -105,10 +106,9 @@ header > div > div > p {
 main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 7.5em 0 7.5em 0;
-
 }
 
 main > h2 {
@@ -126,7 +126,7 @@ ul {
 }
 
 ul li {
-    font-size: 1.0em;
+    font-size: 1em;
 }
 
 .big-font {
@@ -135,14 +135,34 @@ ul li {
     margin-right: 3vw;
 }
 
+
+.mySkills p {
+    margin-bottom: 2vh;
+}
+
 @media screen and (max-width: 1200px) {
     .big-font {
         font-size: 10em;
     }
 }
 
-.mySkills p {
-    margin-bottom: 2vh;
+@media screen and (min-width: 1024px) {
+
+    main {
+        justify-content: center;
+    }
+
+    .big-font {
+        margin-right: 10vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* ------------- FOOTER ------------- */
