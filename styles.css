@@ -6,8 +6,13 @@
 }
 
 body {
-    font-family: Arial, cursive;
+    font-family: Montserrat, Arial, cursive;
     font-size: 15px;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(".\fonts\Montserrat-Regular.ttf");
 }
 
 a:visited {
@@ -71,6 +76,7 @@ header {
     header > div > div {
         width: 40vw;
     }
+
 }
 
 h1 {
@@ -87,6 +93,11 @@ header > div {
     justify-content: center;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+}
+
 header > div > div {
     display: flex;
     justify-content: center;
@@ -100,13 +111,14 @@ header > div > div > p {
 .presentation {
     display: flex;
     flex-direction: column;
+    margin-right: 10vw;
 }
 
 /* ------------- MAIN ------------- */
 main {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 7.5em 0 7.5em 0;
 }
@@ -116,7 +128,6 @@ main > h2 {
 }
 
 main > div > p {
-    width: 35vw;
     font-size: 1em;
 }
 
@@ -131,10 +142,12 @@ ul li {
 
 .big-font {
     font-size: 12.5em;
-    width: 15vw;
-    margin-right: 3vw;
+    padding-right: 5vw;
 }
 
+.mySkills {
+    width: 40vw;
+}
 
 .mySkills p {
     margin-bottom: 2vh;
@@ -157,10 +170,9 @@ ul li {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 650px) {
 
     main {
-        display: flex;
         flex-direction: column;
     }
 }
@@ -171,23 +183,23 @@ footer {
 }
 
 footer p {
-    margin-left: 23vw;
+    margin-left: 15vw;
     margin-bottom: 4vh;
     font-size: 1.6em;
 }
 
 h3 {
     font-size: 2.5em;
-    margin-left: 23vw;
+    margin-left: 15vw;
 }
 
 .social {
-    margin-left: 23vw;
+    margin-left: 15vw;
 }
 
 ion-icon {
     font-size: 4em;
     margin-right: 1.5vw;
     margin-bottom: 5vh;
-    padding: 0.2em 0.2em 0.2em 0.2em;
+    padding: 0.1em 0.1em 0.1em 0.1em;
 }
