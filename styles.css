@@ -1,10 +1,7 @@
-/* ---------------------------------- */
-/* -------------> LAPTOP <----------- */
-/* ---------------------------------- */
+/* ============> COMPUTER <============ */
 
-/* ------------> GENERAL <----------- */
-
-/* -> RESET FOR ALL WEB BROWSERS <-  */
+/* ------------- GENERAL ------------- */
+/* -- RESET FOR ALL WEB BROWSERS --  */
 * {
     margin:  0;
     padding: 0;
@@ -13,7 +10,20 @@
 body {
     font-family: Montserrat, Arial, cursive;
     font-size:   20px;
-    margin:      auto;
+}
+
+section {
+    margin:    auto;
+    max-width: 1440px;
+}
+
+a:visited {
+    color: white;
+}
+
+a {
+    color:           white;
+    text-decoration: none;
 }
 
 @font-face {
@@ -27,15 +37,6 @@ body {
     font-weight: 500;
 }
 
-a:visited {
-    color: white;
-}
-
-a {
-    color:           white;
-    text-decoration: none;
-}
-
 .color-blue {
     color: rgb(3, 52, 108);
 }
@@ -47,7 +48,7 @@ a {
 .bg-green {
     background-color: rgb(0, 237, 162);
     font-family:      Montserrat-Bold, Arial, sans-serif;
-    padding:          0 0.25rem 0 0.25rem;
+    padding:          0 0.25rem;
 }
 
 .bg-light-blue {
@@ -62,64 +63,65 @@ a {
     background-color: rgb(116, 81, 235)
 }
 
-header section, main section, footer section {
-    margin:    auto;
-    max-width: 1440px;
-}
-
-/* ------------> HEADER <------------ */
-
+/* ------------- HEADER ------------- */
 header section {
     display:         flex;
-    height:          50vh;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding:         5vh 10vw 0 10vw;
+}
+
+header section > div {
+    display:         flex;
+    justify-content: center;
+}
+
+header section > div > div {
+    display:         flex;
+    justify-content: center;
+    width:           30vw;
+}
+
+header section > div > div > p {
+    font-size: 1.1rem;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 h2 {
     font-size:     2em;
-    margin-bottom: 1em;
-}
-
-header > section > div {
-    display:         flex;
-    justify-content: center;
+    margin-bottom: 2vh;
 }
 
 img {
-    width: 100%;
+    height: 100%;
+    width:  100%;
 }
 
 .presentation {
+    display:        flex;
+    flex-direction: column;
+}
+
+/* ------------- MAIN ------------- */
+main {
     display:         flex;
-    flex-direction:  column;
     justify-content: center;
-    margin-right:    10vw;
-    width:           30vw;
 }
 
-.presentation > p {
-    font-size: 1.205rem;
-}
-
-/* ------------> MAIN <------------- */
 main section {
     align-items:     center;
     display:         flex;
-    flex-direction:  row;
-    justify-content: center;
-    margin-bottom:   7.5em;
-    margin-top:      7.5em;
+    justify-content: space-around;
+    margin:          10vh 0;
 }
 
-main > section > h2 {
-    margin-bottom: -2em;
+main section h2 {
+    margin-bottom: 2vh;
 }
 
-main > section > div > p {
+main section > div > p {
     font-size: 1em;
 }
 
@@ -138,99 +140,101 @@ ul li {
 }
 
 .mySkills {
-    width: 40vw;
+    width: 50%;
 }
 
 .mySkills p {
     margin-bottom: 2vh;
 }
 
-/* ------------> FOOTER <------------- */
+/* ------------- FOOTER ------------- */
 footer section {
     font-family: Arial, cursive;
-    padding-top: 5vh;
+    padding:     12vh 10vw;
+
 }
 
 footer section p {
     font-size:     1.6em;
     margin-bottom: 4vh;
-    margin-left:   10vw;
 }
 
 h3 {
-    font-size:   2.5em;
-    margin-left: 10vw;
+    font-size: 2.5em;
 }
 
-.social {
-    margin-left: 10vw;
+.social a {
+    padding-right: 1vw;
 }
 
 ion-icon {
+    border-radius: 5px;
     font-size:     4em;
-    margin-bottom: 5vh;
-    margin-right:  1.5vw;
-    padding:       0.1em 0.1em 0.1em 0.1em;
+    padding:       0.15em 0.15em 0.15em 0.15em;
 }
 
-/* ---------------------------------- */
-/* -------------> MOBILE <----------- */
-/* ---------------------------------- */
+/* ============> TABLET <============ */
 
-/* ------------> GENERAL <----------- */
-
-/* ------------> HEADER <------------ */
-
-@media screen and (max-width: 1200px) {
-    header {
-        display:         flex;
-        justify-content: space-around;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    header > div > div {
-        width: 40vw;
-    }
-
-}
-
-/* -------------> MAIN <------------- */
-
-@media screen and (max-width: 1200px) {
-    .big-font {
-        font-size: 10em;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-    main {
+/* ------------- HEADER ------------- */
+@media screen and (max-width: 960px) {
+    header section {
+        flex-direction:  column-reverse;
         justify-content: center;
+        padding:         5vh 10vw;
+        text-align:      center;
+    }
+
+    img {
+        width: 25%;
+    }
+}
+
+/* -------------- MAIN -------------- */
+
+@media screen and (max-width: 960px) {
+    main section {
+        flex-direction:  column;
+        justify-content: center;
+        padding:         5vh 10vw;
+    }
+
+    ul {
+        padding-left: 10vw;
+    }
+
+    .mySkills h2 {
+        text-align: center;
+    }
+
+    .mySkills {
+        text-align: justify;
+        width:      100%;
+    }
+
+    main section {
+
+    }
+
+}
+
+/* ============> MOBILE <============ */
+
+/* -------------- MAIN ---------------*/
+
+@media screen and (max-width: 500px) {
+
+    main section {
+        margin:    0;
+        max-width: 100%;
+        padding:   0;
     }
 
     .big-font {
-        margin-right: 10vw;
+        font-size: ;
+    }
+
+    p {
+        font-size: 0.5em;
+        margin:    auto 5vw;
     }
 }
-
-@media screen and (max-width: 650px) {
-
-    main {
-        flex-direction: column;
-    }
-}
-
-/* -----------> FOOTER <----------- */
-
-/*
-
-
-
-*/
