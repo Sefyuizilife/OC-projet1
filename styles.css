@@ -230,11 +230,24 @@ ion-icon {
     }
 
     .big-font {
-        font-size: ;
+        display: none;
     }
 
-    p {
-        font-size: 0.5em;
-        margin:    auto 5vw;
+    .mySkills h2 {
+        margin-top: 2vh;
+    }
+
+    .mySkills p, .mySkills ul {
+        margin-left:  5vw;
+        margin-right: 5vw;
+    }
+
+}
+
+/* -------------- FOOTER ---------------*/
+
+@media screen and (max-width: 500px) {
+    footer section {
+        padding: 10vw;
     }
 }
