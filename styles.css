@@ -247,7 +247,23 @@ ion-icon {
 /* -------------- FOOTER ---------------*/
 
 @media screen and (max-width: 500px) {
+
+    footer section h3, footer section p {
+        font-size: 1.5em;
+    }
+
+    footer section p span {
+        font-size: 0.8em;
+    }
+
     footer section {
         padding: 10vw;
+    }
+
+    ion-icon {
+        justify-content: center;
+        margin:          auto;
+        max-height:      20px;
+        max-width:       20px;
     }
 }
